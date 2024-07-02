@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>Centered Image and Footer Text</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-    </style>    
+        .container {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer {
+            text-align: center;
+            font-size: 9px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <img src="img/logo.jpg" alt="Centered Image">
+    <div class="container">
+        <img src="img/logo.jpg" alt="Centered Image">
+    </div>
+    <div class="footer">
+        <a>Don't worry, we are still here... 🤠</a>
+        <a>Site is being updated.</a>
+        <a>reach us at </a> 
+        <a href="mailto:service@pdragon.co">service@pdragon.co</a>
+    </div>
 </body>
 </html>
